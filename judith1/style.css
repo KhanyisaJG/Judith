@@ -1,0 +1,285 @@
+/*global styling*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	line-height: 1.5;
+}
+html,body{
+	font-family:helvetica,arial,courier;
+	font-size: 1rem;
+	background: rgb(240, 242, 245);
+	color: rgb(27, 27, 30);
+}
+
+/* !global styling*/
+
+/*styling the heading section*/
+#main_header{
+	background:linear-gradient(rgb(27, 149, 228),rgb(198, 228, 248), rgb(198, 228, 248));
+	padding: 2rem 0;
+}
+#main_header div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; 
+    margin: 0 auto;
+}
+
+#main_header h1{
+	color: #1b95e4;
+	text-align: center;
+	text-transform: uppercase;
+	font-family: Impact, Charcoal, sans-serif;
+	letter-spacing: 2px;
+
+}
+#main_header button{
+    background: rgb(27, 149, 228);
+    border: 1px solid #fff;
+    border-radius: .5rem;
+    padding: .6rem 1rem;
+    color: #fff;
+    font-size: 1rem;
+    letter-spacing: 1px;
+
+}
+#main_header button:hover{
+	transition: .5s ease-in;
+	background: rgb(128, 0, 255);
+}
+/* !styling the heading section*/
+
+/*styling the main section*/
+
+  #main{
+  	background-color: rgb(255, 255, 255);
+  	width: 80%;
+  	margin: 2rem auto;
+  	border: 3px solid rgba(27, 149, 228, .8);
+  	border-radius: .5rem;
+  }
+   .flex{
+	   	display: flex;
+	   	flex-wrap: wrap;
+	   	justify-content: center;
+	   	align-items: center;
+   }
+  .title{
+  	background: linear-gradient(rgb(27, 149, 228),rgb(198, 228, 248));
+  	color: #fff;
+  	text-align: center;
+  	padding: 1rem;
+  	border-bottom: 1px solid #fff;
+  }
+  /*styling the output section*/
+  #output .msg{
+  	padding: .5rem;
+  	text-align: center;
+  	color: #fff;
+  }
+   #output .success{
+   	  background: rgb(173,255,47);
+   }
+   #output .danger{
+   	  background: rgb(255,0,0);
+   }
+  #output p{
+    font-size: 1.1rem;
+    padding: 1rem;
+    font-weight: 700;
+  }
+  
+   /*!styling the output section*/
+
+
+
+   /*sytling the coin section*/
+   .coin-container{
+      padding: 1rem;
+   }
+   .coin-container .flex{
+   	justify-content: space-between;
+   }
+   .coin-container .coin{
+    	margin: 1rem;
+    	display: flex;
+    	flex-direction: column;
+    	justify-content: center;
+    	align-items: center;
+   }
+
+   .coin-container .coin .cent{
+		height: 100px;
+		width: 100px;
+		background: url(images/50c.png);
+		background-size: cover;
+		margin-bottom: .2rem;
+	}
+
+	.coin-container .coin  .r1{
+		height: 80px;
+		width: 80px;
+		background: url(images/r1.png);
+		background-size: cover;
+		margin-bottom: .2rem;
+	}
+	.coin-container .coin  .r2{
+		height: 120px;
+		width: 120px;
+		background: url(images/r2.png);
+		background-size: cover;
+		margin-bottom: .2rem;
+	}
+	.coin-container .coin  .r5{
+		height: 140px;
+		width: 140px;
+		background: url(images/5r.png);
+		background-size: cover;
+		background-position: center;
+		margin-bottom: .2rem;
+	}
+   .coin-container .coin input{
+        background: rgb(198, 228, 248);
+		padding: .5rem .2rem;
+		width: 100px;
+		border:none;
+		border-radius: .5rem;
+		font-size: 1.1rem;
+		padding-left: 1rem;
+		color: rgb(27, 149, 228);
+   }
+
+   #coins .buttons{
+   		padding: 1rem;
+   		border-top: 1px solid #aaa;
+   }
+   #coins span{
+   	padding-left: 2rem;
+   }
+   #coins .buttons button{
+
+   		background: rgb(255, 0, 255);
+   		color: #fff;
+   		font-size: 1rem;
+   		padding: .6rem 1.5rem;
+   		border: 1px solid #aaa;
+   		border-radius: .5rem;
+
+   }
+   /*styling the coin section*/
+   
+   /*snack products*/
+   .drinks{
+   		padding: 1rem;
+   }
+   .snack-container h3{
+	   	color: rgb(0, 128, 255);
+	   	padding-bottom: 1rem;
+   }
+   .snack{
+   	    padding: .5rem;
+   	    border:1px solid #bbb;
+   	    border-radius: .5rem;
+   		margin: .5rem;
+   		width: 25%;
+   }
+   .snack:hover{
+   	    background: rgb(0, 255, 255);
+   }
+   .snack .container{
+   	  display: block;
+	  position: relative;
+	  padding-left: 35px;
+	  margin-bottom: 12px;
+	  cursor: pointer;
+	  font-size: 1.1rem;
+	  -webkit-user-select: none;
+	  -moz-user-select: none;
+	  -ms-user-select: none;
+	  user-select: none;
+   }
+   /* Hide the browser's default radio button */
+	.snack .container input {
+	  position: absolute;
+	  opacity: 0;
+	  cursor: pointer;
+	  height: 0;
+	  width: 0;
+	}
+
+	/* Create a custom radio button */
+	.checkmark {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  height: 25px;
+	  width: 25px;
+	  background-color: #fff;
+	  border: 1px solid #999;
+	  border-radius: 50%;
+	}
+
+	/* On mouse-over, add a grey background color */
+	.snack .container:hover input ~ .checkmark {
+	  background-color: #eee;
+	}
+
+	/* When the radio button is checked, add a blue background */
+	.snack .container input:checked ~ .checkmark {
+	  background-color: #2196F3;
+	}
+
+	/* Create the indicator (the dot/circle - hidden when not checked) */
+	.checkmark:after {
+	  content: "";
+	  position: absolute;
+	  display: none;
+	}
+
+	/* Show the indicator (dot/circle) when checked */
+	.snack .container input:checked ~ .checkmark:after {
+	  display: block;
+	}
+    /* Style the indicator (dot/circle) */
+	.snack .container .checkmark:after {
+	  left: 9px;
+	  top: 5px;
+	  width: 5px;
+	  height: 10px;
+	  border: solid white;
+	  border-width: 0 3px 3px 0;
+	  -webkit-transform: rotate(45deg);
+	  -ms-transform: rotate(45deg);
+	  transform: rotate(45deg);
+	}
+
+	.snack p input{
+    	background: unset;
+    	border:none;
+    	font-size: 1rem;
+	}
+
+	.snack-container .buttons{
+		background: rgb(124, 156, 205);
+		justify-content: space-between;
+	}
+	.snack-container .buttons button{
+		background: rgb(124, 156, 205);
+		border: none;
+		font-size: 1rem;
+		color: #fff;
+		cursor: pointer;
+		padding: 1rem 2rem;
+		width: 50%;
+		border-right: 1px solid #bbb;
+	}
+	.snack-container .buttons button:hover, #coins button:hover{
+		background: rgb(27, 149, 228);
+		transition: .5s ease-in;
+	}
+   /*!snack products*/
+
+
+/* !styling the main section
